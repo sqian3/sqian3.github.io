@@ -1,0 +1,106 @@
+<html>
+ <head>
+    <style>
+        p{
+            text-align:center;
+            font-family:"pixelify sans", sans-serif;
+            color: rgb(142, 178, 209);
+            font-size: 50px;
+        }
+        body{
+            background-color:rgb(0, 0, 0);
+            background-image: url("images/pool.gif");
+            background-size: contain;
+            background-repeat:no-repeat;
+            background-position: center;
+        }
+        #duck1{
+            left: 33%;
+            top: 54%;
+            position:absolute;
+        }
+        #dduck2{
+            opacity: 0;
+            left: 46%;
+            top: 75%;
+            position:absolute;
+        }
+        #duck2{
+            left: 43%;
+            top: 73%;
+            position:absolute;
+        }
+        #dduck3{
+            opacity: 0;
+            left: 66%;
+            top: 62%;
+            position:absolute;
+        }
+        #duck3{
+            left: 66%;
+            top: 62%;
+            position:absolute;
+        }
+        #dduck4{
+            opacity: 0;
+            left: 70%;
+            top: 49%;
+            position:absolute;
+        }
+        #duck4{
+            left: 70%;
+            top: 49%;
+            position:absolute;
+        }
+        a:link{
+           font-size:20px;
+           color:rgb(176, 82, 91);
+           transition-duration: .25s;
+        }
+        a:link:hover{
+            opacity: .5;
+        }
+    </style>
+ </head>
+ <body>
+   
+    <audio id="duckquack">
+        <source src=
+            "cool/quack1.mp3"
+                type="audio/ogg"> 
+     </audio>
+     <audio id="duckquack2">
+        <source src=
+            "cool/quack2.mp3"
+                type="audio/ogg"> 
+     </audio>
+     <audio id="duckquack3">
+        <source src=
+            "cool/quack3.mp3"
+                type="audio/ogg"> 
+     </audio>
+     <p> Kitchen</p>
+    
+     <a href="living room.html"><img src="images/duck1.webp" id="duck1" style="width:7%;height:auto"></a>
+     <img src="images/duck2.png" id="duck2" style="width:12%;height:auto"> 
+     <img src="images/duck3.png" id="duck3" style="width:6%;height:auto"> 
+     <img src="images/duck4.png" id="duck4" style="width:4%;height:auto"> 
+     <button onclick="play_Audio1()" id="dduck2" style="width:75px; height:75px" type="button">play audio</button>
+     <button onclick="play_Audio2()" id="dduck3" style="width:75px; height:75px" type="button">play audio</button>
+     <button onclick="play_Audio3()" id="dduck4" style="width:75px; height:75px" type="button">play audio</button>
+     <script>
+        var duck1 = document.getElementById("duckquack");
+        function play_Audio1() {
+            duck1.play();
+        }
+        var duck2 = document.getElementById("duckquack2");
+        function play_Audio2() {
+            duck2.play();
+        }
+        var duck3 = document.getElementById("duckquack3");
+        function play_Audio3() {
+            duck3.play();
+        }
+        </script>
+ </body>
+</html>

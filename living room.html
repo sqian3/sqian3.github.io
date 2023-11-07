@@ -1,0 +1,78 @@
+<html> 
+   <head>
+     <style> body{
+        background-color:rgb(0, 0, 0);
+        background-image: url("images/lung.png");                
+        background-size: contain;
+        background-repeat:no-repeat;
+        background-position: center;
+       }
+        p{
+            text-align:center;
+            font-family:"pixelify sans", sans-serif;
+            color: rgb(106, 106, 106);
+            font-size: 50px;
+          }
+        #heart {
+          transition: width 1s;
+          position: absolute;
+          top: 30%;
+          left: 45%;
+          }
+          #heart:hover {
+           width:100px;
+          }
+        a:link{
+           font-size:20px;
+           color:rgb(176, 82, 91);
+           transition-duration: .25s;
+        }
+        a:link:hover{
+            opacity: .5;
+        }
+        .column {
+          display: inline; 
+        }
+
+        #kitchen {
+          position: absolute;
+          top: 50%;
+          left: 32%;
+        }
+        #bedroom {
+          position: absolute;
+          top: 50%;
+          left: 65%;
+        }
+        /* * {
+           box-sizing: border-box;
+        }
+        .column {
+           float: inline-start;
+           width:33.33%;
+           padding: 2px;
+        }
+        .row::after {
+         content: "";
+         clear: both;
+         display: table;
+        } */
+     </style>
+
+    </head>
+<body>  
+        <p> living room <p>
+        <p> li <p>
+    <!-- <div class="row">   -->
+    <div class ="column">
+      <p><b><a id="kitchen" href="kitchen.html">kitchen</a></a></b></p>
+    </div>
+    <div class="column">
+      <a href="front door.html"><img src="images/heart.webp" alt="door" id="heart"style="width:12%;height:auto"></a>
+      </div>
+    <div class ="column">
+      <p><b><a id= "bedroom" href="bedroom.html">bedroom</a></b></p>
+    </div>
+    <!-- </div> -->
+</body>
+</html>

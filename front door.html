@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style> body{
+            background-color:rgb(0, 0, 0);
+            background-image: url("images/body.png");
+            background-size: contain;
+            background-repeat:no-repeat;
+            background-position: center;
+        }
+            p{
+                text-align:center;
+                font-family:"pixelify sans", sans-serif;
+                color: rgb(124, 29, 22);
+                font-size: 120px;
+            }
+            .openingdoor {
+                position: relative;
+                display: inline-block;
+                top: 0%;
+                left: 50.5%;
+            }
+            .openingdoor .doortop {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+            }
+            .openingdoor:hover .doortop {
+              display: inline;
+            }
+        </style>
+    </head>
+    <body> 
+        <p> See What We Are</p>
+        <div class="openingdoor">
+        <a href="living room.html"><img src="images/opendoor.png" style="width:82px;height:84px;" class="doortop"></a>
+        <img src="images/door.png" alt="door"  style="width:42px;height:84px;">
+        </div>
+        <audio>
+            <source src="https://www.youtube.com/watch?v=Q6MemVxEquE" type="audio/ogg">
+        </audio> 
+    </body>
+</html>
